@@ -1,0 +1,604 @@
+
+/* site styles */
+:root {
+    --primary: #95D990;
+    --primaryDark: #183616; 
+    --contrastLight:#F4EBBE;
+  }
+
+
+body{
+    margin: 0;
+    background-color: var(--contrastLight);
+}
+.container{
+    /*color: var(--primaryDark);*/
+    margin: 0 auto;
+    max-width: 1000px;
+    height: auto;
+}
+
+a{
+    margin: 0;
+    text-decoration: none !important;
+    color: var(--primaryDark);
+}
+
+
+/* menu/navigation styles */
+ul{
+    margin: 0;
+    position: relative;
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: center;
+}
+
+li{
+    list-style: none;
+    margin: 10px;
+    font-size: 30px;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100px;
+}
+
+li:hover{
+    color: var(--primary);    
+}
+
+li a:hover{
+    color: var(--primary);    
+}
+
+
+.navigation_header{
+    position: sticky;
+}
+
+.header_text{
+    height: 100px;
+    width: 15%;
+    text-align: center;
+    padding-top: 9%;
+}
+
+.login_container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-flow: row;
+    padding: 10px;
+}
+.login_container  span{
+    padding-right: 5px;
+
+}
+
+.login_container:hover{
+    background-color: var(--primary);
+    border-radius: 5px;
+}
+
+
+.login_icon{
+    display: block;
+    width: 55px;
+    height: 55px;
+}
+
+
+/* footer styles */
+
+.footer_container{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primaryDark);
+    color: var(--contrastLight);
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.footer_container h3{
+    margin: 20px;
+}
+
+.footer_text{
+    color: var(--contrastLight);
+}
+h3:hover{
+    color: var(--primary);
+}
+
+
+/* index page styles */
+
+.main_container{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    text-align: center;
+
+}
+
+.image_container{
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
+
+}
+
+.splash_image{
+    border-radius: 10px;
+}
+
+.landingPageText{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+/* login page styles */
+
+.login_form_container{  
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    background-color: var(--primaryDark);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 60px;
+}
+
+.textFields{
+    text-align: center;
+    justify-content: left;
+    background-color: beige;
+    border: 2px solid var(--contrastLight);
+    margin: 10px;
+    height: 40px;
+    border-radius:5px;
+}
+
+.textFields:hover{
+    background-color: var(--primary);
+}
+
+.fields{
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 30px;
+    width: 100%;
+    color: white;
+}
+
+.submit_container{
+    margin: 10px;
+}
+.submitButton{
+    background-color: var(--contrastLight);
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--contrastLight);
+    box-sizing: border-box;
+}
+
+.submitButtonLogout{
+    background-color: var(--primaryDark);
+    padding: 7px;
+    border-radius: 5px;
+    color: var(--contrastLight);
+    border: 2px solid var(--contrastLight);
+    box-sizing: border-box;
+}
+
+.submitButtonLogout:hover{
+    background-color: var(--primary);
+    color: var(--contrastLight);
+}
+
+
+.submitButton:hover{
+    background-color: var(--primary);
+    box-sizing: border-box;
+}
+
+/*form page*/
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+}
+
+.formPageContainer{
+    position: relative;
+    top: 20px;
+    max-height: 500px;
+    overflow: hidden;
+    min-width: 300px;
+    margin: 0 auto;
+    background-color: var(--primaryDark);
+    width: 50%;
+    border-radius: 10px;
+
+    -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+
+.formPageContainer:hover{
+    overflow: auto;
+}
+
+.fieldName{
+    background-color: rgb(69, 143, 69);
+}
+
+
+form{
+    text-align: left;
+}
+
+.dropDown_container{
+    color: var(--primaryDark);
+    margin-top: 15px;
+    background-color: var(--primary);
+    text-align: center;
+    font-size: 20px;
+
+}
+select{
+    border: 0;
+    color: grey;
+}
+
+.radio_container{
+    color: white;
+    margin-top: 10px;
+    background-color: var(--primaryDark);
+}
+
+.radio_grid{
+    font-size: 40px;
+    padding: 10px 30px 20px 30%;
+}
+
+input[type="radio"] {
+    -ms-transform: scale(3); /* IE 9 */
+    -webkit-transform: scale(3); /* Chrome, Safari, Opera */
+    transform: scale(3);
+    background-color: beige;
+    border: 0;
+}
+
+.checkbox_container{
+    color: white;
+    margin-top: 10px;
+    background-color: var(--primary);
+    text-align: left;
+}
+
+input[type="checkbox"] {
+    -ms-transform: scale(3); /* IE 9 */
+    -webkit-transform: scale(3); /* Chrome, Safari, Opera */
+    transform: scale(3);
+    background-color: beige;
+    border: 0;
+    margin: 15px;
+}
+.inner_checkbox{
+    font-size: 40px;
+    padding: 7px 6px 24px 30%;
+}
+
+.inner_checkbox > label{
+    margin-top: 20px;
+    margin-left: 3%;
+}
+
+.text_area_container{
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+    padding-bottom: 10px;
+    background-color: var(--primaryDark);
+    text-align: left;
+}
+
+textarea{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    border: 5px solid green;
+}
+
+.submit_container{
+    color: white;
+    background-color: var(--primaryDark);
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;;
+}
+
+
+table{
+    margin: 0 auto;
+    background-color: var(--primaryDark);
+}
+
+tr{
+    background-color: var(--primaryDark);
+}
+
+tr:hover{
+    background-color: var(--primary);
+}
+
+td{
+    border:2px solid beige;
+    color: white;
+    width: 380px;
+    height: 40px;
+    font-size: 20px;
+    padding: 5px;
+    overflow: auto;
+}
+
+/*
+
+button{
+    position: relative;
+    top: 20px;
+    display: block;
+    background-color: rgb(17, 167, 17);
+    color: white;
+    border: 0;
+    border-radius: 5px;;
+    width: 30%;
+    height: 30%;
+    font-size: 30px;
+    margin: 0 auto;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+         box-shadow: 0 8px 6px -6px black;
+}
+
+button:hover{
+    background-color: rgb(255, 156, 110);
+    color: white;
+}
+*/
+
+.formH1{
+    text-align: center;
+    color: white;
+}
+
+.formH1_results{
+    text-align: center;
+    color: var(--primaryDark);
+}
+
+.form_submission_results{
+    height: 600px;
+    overflow: scroll;
+}
+.back_to_form_container{
+    text-align: center;
+    margin: 10px;
+}
+
+.submitButton_resultPage{
+    background-color: var(--primaryDark);
+    color: var(--contrastLight);
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--contrastLight);
+    box-sizing: border-box;
+}
+
+.submitButton_resultPage:hover{
+    background-color: var(--primary);
+    box-sizing: border-box;
+}
+
+
+/*Goals page*/
+
+
+.icon_goal_flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.icon_goal_flex  img{
+    height: 300px;
+    transition: .5s ease-out;
+}
+
+.icon_goal_flex  img:hover{
+    transform: scale(1.5);
+}
+
+/*Welcome text*/
+.welcome{
+    margin: 0px;
+    text-align: center;
+}
+
+
+/* Spending tracker page*/
+
+.spendingContainer{
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+
+.left_side_of_spending{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+}
+.right_side_of_spending{
+    text-align: center;
+    width: 50%;
+}
+
+
+.left_side_of_spending h1{
+    margin-bottom: 9px;
+}
+
+.plusSign{
+    text-align: center;
+    align-items: center;
+    height: 33px;
+    width: 33px;
+    background-color: var(--primaryDark);
+    color: var(--contrastLight);
+    border:5px solid var(--primary);
+    border-radius: 30px;
+    font-size: 30px;
+    margin-left: 3px;
+}
+
+.plusSign:hover{
+    border:5px solid var(--primary);
+}
+
+.newPurchase{
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    color: var(--primaryDark);
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: var(--primary);
+    padding: 10px;
+    border: 0px;
+    border:3px solid var(--contrastLight);
+}
+
+.newPurchase:hover{
+    background-color: var(--primaryDark);
+    color: var(--contrastLight);
+    border:3px solid var(--primary);
+}
+
+.spendingContainer{
+    display: flex;
+    flex-flow: row;
+}
+
+.charts{
+    background-color: var(--contrastLight);
+    border: 5px solid var(--primary);
+    color: var(--contrastDark);
+    height: 100px;
+}
+.spendingInfo{
+    background-color: var(--primary);
+    color: var(--contrastDark);
+    height: 100px;
+}
+
+/* add a purchase page*/
+.AddPurchase{
+    text-align: center;
+}
+
+.sIcon{
+    background-color: #95D990;
+    filter: invert(88%) sepia(50%) saturate(190%) hue-rotate(347deg) brightness(100%) contrast(92%);
+    height: 50px;
+    width: 50px;
+}
+
+
+.addAPurchaseForm{
+    position: relative;
+    top: 20px;
+    max-height: 500px;
+    overflow: hidden;
+    min-width: 300px;
+    margin: 0 auto;
+    background-color: var(--primaryDark);
+    width: 50%;
+    border-radius: 10px;
+
+    -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+
+.addAPurchaseForm:hover{
+    overflow: auto;
+}
+
+
+.hideMe{
+    visibility: hidden;
+}
+
+.purchaseIcons{
+    filter: invert(94%) sepia(9%) saturate(1071%) hue-rotate(344deg) brightness(103%) contrast(91%);
+}
+
+.iconContainer{
+    margin: 10px;
+    box-sizing: border-box;
+    padding: 5px;    
+    text-align: center;
+    border: 5px solid var(--contrastLight);
+    width: 45%;
+}
+.iconContainer:hover{
+    background-color: var(--primary);
+}
+
+
+.iconOuterContainer{
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.iconOuterContainer h4{
+    color: var(--contrastLight);
+}
+
+.radio_spendIngCategory_hidden{
+    visibility: hidden;
+    display: none;
+    height: 0px;
+    width: 0px;
+}
+
+.secondPageAddPurchase{
+    text-align: right;
+}
+
