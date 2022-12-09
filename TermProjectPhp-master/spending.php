@@ -1,6 +1,5 @@
 <?php include 'include/header.php';
 
-
 if ($_SESSION['LoggedIn'] != true) {
     header('location: login.php');
 }
@@ -29,7 +28,6 @@ if ($_SESSION['LoggedIn'] != true) {
                     }
                 }
 
-
                 // frees up the data
                 mysqli_free_result($result);
 
@@ -48,10 +46,6 @@ if ($_SESSION['LoggedIn'] != true) {
         </div>
     </div>
 
-
 </div>
 
-
-
 <?php include 'include/footer.php'?>
-
