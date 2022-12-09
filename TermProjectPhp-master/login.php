@@ -5,7 +5,6 @@
     }
  ?>
 
-
 <div class="login_form_container">
         <h1 style="color: var(--contrastLight);">-LOGIN-</h1>
         <form name="myInfo" method="POST" action="verifyLogin.php">
@@ -29,6 +28,4 @@
         <form>
 </div>
 
-
 <?php include 'include/footer.php'?>
-
