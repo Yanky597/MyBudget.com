@@ -17,6 +17,4 @@ echo "<h1 class='formH1_results'>Welcome" . " " . ucfirst($_COOKIE['userName']) 
     <img src="./images/buddingGrowth.png" alt="save for retirement icon">
 </div>
 
-
-
 <?php include 'include/footer.php' ?>
