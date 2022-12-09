@@ -12,8 +12,6 @@ $user = htmlentities(strtolower($_POST['userName']));
 //$passW = mysqli_real_escape_string($link, $_POST['password']);
 $passW = htmlentities($_POST['password']);
 
-
-
 // sets up a query from the database
 //$query = 'SELECT * username FROM AuthorizedUsers WHERE username = "chana123"';
 
@@ -60,9 +58,6 @@ mysqli_free_result($result);
 
 //closes the link to the database?
 mysqli_close($link);
-
-
-
 
 if($_SESSION['LoggedIn'] === true){
     echo "<h1>Welcome"." ".$_COOKIE['userName']."!</h1><br>";
