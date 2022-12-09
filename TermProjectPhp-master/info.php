@@ -10,7 +10,6 @@ else{
 
 ?>
 
-
 <div class="form_submission_results">
     <h1 class="formH1_results">-YOUR PROFILE-</h1>
 
