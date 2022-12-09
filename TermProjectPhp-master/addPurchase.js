@@ -1,6 +1,3 @@
-
-
-
 const renderPage2 = (text) => {
     document.querySelector('.iconOuterContainer').style.display = 'none';
     document.querySelector('.secondPageAddPurchase').innerHTML = secondPage.content;
