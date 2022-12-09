@@ -49,7 +49,6 @@ let icons = document.querySelectorAll(".description");
 for (let x of outerIcon) {
     x.addEventListener('click', () => {
         for (let j of radios) {
-                //console.log(x.lastChild.innerHTML);
             if (x.lastChild.innerHTML === j.value) {
                 j.checked = true;
                 renderPage2(j.value);
